@@ -1,7 +1,6 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@material-ui/core";
 import { useFormik } from "formik";
 import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
 import { calculateOrder } from "wall-partition-assemble";
 import * as yup from "yup";
 import FormBox from "../components/styled/FormBox";
@@ -20,7 +19,7 @@ const validationSchema = yup.object({
     ),
 });
 
-const Home = () => {
+const Basic = () => {
   const [order, setOrder] = useState<any>([]);
 
   const formik = useFormik({
@@ -108,4 +107,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Basic

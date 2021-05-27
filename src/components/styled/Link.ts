@@ -6,7 +6,7 @@ export const Link = styled(RouterLink)`
   text-decoration: none;
 
   margin-left: 1rem;
-
+  opacity: 0.6;
   &:hover {
     text-decoration: underline;
     color: black;
@@ -16,4 +16,9 @@ export const Link = styled(RouterLink)`
   &:active {
     opacity: 0.4;
   }
+
+  &:focus {
+    opacity: 1;
+  }
+
 `;
