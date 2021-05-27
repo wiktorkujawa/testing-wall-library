@@ -5,7 +5,8 @@ import './App.css';
 import { Link } from './components/styled/Link';
 import Menu from './components/styled/Menu';
 import Advanced from './pages/Advanced';
-import Home from './pages/Home';
+import Basic from './pages/Basic';
+
 import { NotFoundPage } from './pages/NotFoundPage';
 
 function App() {
@@ -21,13 +22,13 @@ function App() {
       }}
     >
     <Menu>
-      <Link to="/">Home</Link>
+      <Link to="/">Basic</Link>
       <Link to="/advanced">Advanced</Link>
       </Menu>
     <div className="container">
       
        <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Basic} />
         <Route exact path="/advanced" component={Advanced} />
         <Route component={NotFoundPage} />
       </Switch>
