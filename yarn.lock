@@ -11453,10 +11453,10 @@ walker@^1.0.7, walker@~1.0.5:
   dependencies:
     makeerror "1.0.x"
 
-wall-partition-assemble@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/wall-partition-assemble/-/wall-partition-assemble-1.0.4.tgz#8f9fd74d80e8f720bbcd5701561c67bc3e4e8013"
-  integrity sha512-hJR6cNyCu9j433m0DZ3lovBueUU3eZkFSjl7i9WC1dcgcGjhtKfj0D+ZgRRblAqeidnkN1aNn15qHCCHfYvGoA==
+wall-partition-assemble@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/wall-partition-assemble/-/wall-partition-assemble-1.0.5.tgz#f9e123ae31c6c65d2dd049a3f924b8edabf4adcc"
+  integrity sha512-IoOfzOZh5lSHL2CjxDNMfuJHqVeimVmUMFxG+Iw21cEEpLMKGvN8NBm8RrrQoEmX4eJetXJJv7oDBZm2FKjrAA==
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
