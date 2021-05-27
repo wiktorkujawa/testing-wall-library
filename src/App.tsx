@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import './App.css';
+import { Link } from './components/styled/Link';
+import Menu from './components/styled/Menu';
+import Advanced from './pages/Advanced';
+import Home from './pages/Home';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ThemeProvider
+      theme={{
+        primary: "#111111",
+        accent: "#E8E8E8",
+        brand: "#E08568",
+        error: "#D8000C",
+        light: "#C0C0C0",
+      }}
+    >
+    <Menu>
+      <Link to="/">Home</Link>
+      <Link to="/advanced">Advanced</Link>
+      </Menu>
+    <div className="container">
+      
+       <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/advanced" component={Advanced} />
+        <Route component={NotFoundPage} />
+      </Switch>
     </div>
+    </ThemeProvider>
   );
 }
 
